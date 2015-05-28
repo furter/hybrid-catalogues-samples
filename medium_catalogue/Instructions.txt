@@ -1,0 +1,92 @@
+ADOBE INDESIGN PRINTING INSTRUCTIONS FOR SERVICE PROVIDER REPORT
+
+PUBLICATION NAME: medium_catalogue.indd
+
+PACKAGE DATE: 28/05/15 19:07
+Creation Date: 28/05/15
+Modification Date: 28/05/15
+
+CONTACT INFORMATION
+
+Company Name: 
+Contact: 
+Address: 
+
+
+
+
+
+Phone: 
+Fax: 
+Email: 
+
+SPECIAL INSTRUCTIONS AND OTHER NOTES
+
+
+
+
+
+
+External Plug-ins 0
+Non Opaque Objects :On Page1, 6, 11, 14, 19, 20, 21, 22, 23
+
+FONTS
+4 Fonts Used; 0 Missing, 0 Embedded, 0 Incomplete, 0 Protected
+
+Fonts Packaged
+- Name: NotCourierSans; Type: TrueType, Status: OK
+- Name: WorkSans-Medium; Type: OpenType Type 1, Status: OK
+- Name: WorkSans-Regular; Type: OpenType Type 1, Status: OK
+- Name: WorkSans-SemiBold; Type: OpenType Type 1, Status: OK
+
+
+COLORS AND INKS
+4 Process Inks; 1 Spot Inks
+
+- Name and Type: Process Cyan; Angle: 0,000; Lines/Inch: 0,000
+- Name and Type: Process Magenta; Angle: 0,000; Lines/Inch: 0,000
+- Name and Type: Process Yellow; Angle: 0,000; Lines/Inch: 0,000
+- Name and Type: Process Black; Angle: 0,000; Lines/Inch: 0,000
+- Name and Type: PANTONE 3252 U; Angle: 0,000; Lines/Inch: 0,000
+
+
+LINKS AND IMAGES
+(Missing & Embedded Links Only)
+Links and Images: 13 Links Found; 0 Modified, 0 Missing 0 Inaccessible
+Images: 0 Embedded, 12 use RGB color space
+
+
+PRINT SETTINGS
+PPD: N/A, (Canon MX530 series)
+Printing To: Printer
+Number of Copies: 1
+Reader Spreads: No
+Even/Odd Pages: Both
+Pages: All
+Proof: No
+Tiling: None
+Scale: 100%, 100%
+Page Position: Upper Left
+Print Layers: Visible & Printable Layers
+Printer's Marks: None
+Bleed: 0 mm, 0 mm, 0 mm, 0 mm
+Color: Composite RGB
+Trapping Mode: None
+Send Image Data: Optimized Subsampling
+OPI/DCS Image Replacement: No
+Page Size: Custom: 230 mm x 290 mm
+Paper Dimensions: 297,039 mm x 420,158 mm
+Orientation: Portrait
+Negative: No
+Flip Mode: Off
+
+
+FILE PACKAGE LIST
+
+1. medium_catalogue.indd; type: Adobe InDesign publication; size: 1752K
+2. medium_catalogue.idml; type: InDesign Markup Document; size: 115K
+3. medium_catalogue.pdf; type: Adobe Acrobat Document; size: 684K
+4. NotCourierSans.ttf; type: Font file; size: 67K
+5. WorkSans-Medium.otf; type: Font file; size: 106K
+6. WorkSans-Regular.otf; type: Font file; size: 97K
+7. WorkSans-SemiBold.otf; type: Font file; size: 107K

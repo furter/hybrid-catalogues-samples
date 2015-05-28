@@ -1,0 +1,95 @@
+%!Adobe-FontList 1.16
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:NotCourierSans
+FamilyName:NotCourierSans
+StyleName:Regular
+MenuName:NotCourierSans
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:NotCourier
+WritingScript:Roman
+OutlineFileName:\NotCourierSans.ttf
+DataFormat:sfntData
+FileLength:69600
+FileModTime:1268219788
+NameArray:0,Mac,4,NotCourier
+NameArray:0,Win,1,NotCourierSans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:WorkSans-Medium
+FamilyName:Work Sans
+StyleName:Medium
+MenuName:Work Sans Medium
+StyleBits:0
+WeightClass:500
+WidthClass:5
+AngleClass:0
+FullName:Work Sans Medium
+WritingScript:Roman
+OutlineFileName:\WorkSans-Medium.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:108992
+FileModTime:1426490978
+NameArray:0,Mac,4,Work Sans Medium
+NameArray:0,Win,1,Work Sans Medium
+NameArray:0,Win,16,Work Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:WorkSans-Regular
+FamilyName:Work Sans
+StyleName:Regular
+MenuName:Work Sans
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Work Sans
+WritingScript:Roman
+OutlineFileName:\WorkSans-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:100160
+FileModTime:1426490978
+NameArray:0,Mac,4,Work Sans
+NameArray:0,Win,1,Work Sans
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:WorkSans-SemiBold
+FamilyName:Work Sans
+StyleName:SemiBold
+MenuName:Work Sans SemiBold
+StyleBits:0
+WeightClass:600
+WidthClass:5
+AngleClass:0
+FullName:Work Sans SemiBold
+WritingScript:Roman
+OutlineFileName:\WorkSans-SemiBold.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:109744
+FileModTime:1426490978
+NameArray:0,Mac,4,Work Sans SemiBold
+NameArray:0,Win,1,Work Sans SemiBold
+NameArray:0,Win,16,Work Sans
+%EndFont
+
