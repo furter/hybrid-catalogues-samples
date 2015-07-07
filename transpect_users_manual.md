@@ -3,11 +3,11 @@
 
 The different components of the magic pipeline:
 
-• an IDML file
+*an IDML file
 with linked assets, images, fonts
-• a mapping file
-• an overriding css stylesheet
-• a configuration file
+*a mapping file
+*an overriding css stylesheet
+*some configuration files
 
 Configuration file:
 Defines things at the level of the structure, like
@@ -16,9 +16,7 @@ Defines things at the level of the structure, like
 Error report:
 Points the errors in the files (IDML + conf?)
 
-
-
-
+##Terminal command
 
 calabash/calabash.sh -o html=out.html -o raw-html=raw.html -o hub=/dev/null adaptions/common/xpl/idml2epub.xpl debug=yes debug-dir-uri=debug input=../content/sample/idml/sample.idml
 
