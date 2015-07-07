@@ -1,7 +1,8 @@
 
-#GUIDED TOUR — THROUGH THE PIPELINE
+#THROUGH THE PIPELINE
+##A manual for designers and editors
 
-The different components of the magic pipeline:
+###The different components of the magic pipeline:
 
 *an IDML file
 with linked assets, images, fonts
@@ -16,9 +17,13 @@ Defines things at the level of the structure, like
 Error report:
 Points the errors in the files (IDML + conf?)
 
-##Terminal command
+###Installation of transpect and terminal commands
 
-calabash/calabash.sh -o html=out.html -o raw-html=raw.html -o hub=/dev/null adaptions/common/xpl/idml2epub.xpl debug=yes debug-dir-uri=debug input=../content/sample/idml/sample.idml
+See here: https://github.com/consortium/BinB/blob/master/transpect/README.md
+
+    calabash/calabash.sh -o html=out.html -o raw-html=raw.html -o hub=/dev/null adaptions/common/xpl/idml2epub.xpl debug=yes debug-dir-uri=debug input=../content/sample/idml/sample.idml
+
+
 
 
 #From HTML to ePub
