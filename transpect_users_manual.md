@@ -1,21 +1,13 @@
 
-#THROUGH THE PIPELINE
-###A manual for designers and editors
+#THROUGH THE PUBLISHING CONVERTER
+###The hybrid publishing converter manual for designers and editors
 
-The following is a guide to use the magic pipeline that converts publishing formats into others.
+The hybrid publishing converter is a tool that converts publications formats into others in a durable, high-quality, design caring hybrid publishing way.
 
-###Some of the components of the magic pipeline:
-
-* an IDML file with linked assets, images, fonts
-
-* a mapping file
-
-* an overriding css stylesheet
-
-* some configuration files
+In short, “hybrid publishing” refers to contemporary practices of producing different publications formats (paper books, ebooks, web contents…) in a connected and complementary way.
 
 
-###Installation of transpect and terminal commands
+###Installation of the hybrid publishing converter and terminal commands
 
 See here: https://github.com/consortium/BinB/blob/master/transpect/README.md
 
@@ -56,6 +48,17 @@ With this rather flexible notion of page, the design for screen-contents has bee
 [IMAGE DIAGRAM]
 
 The proprietary software InDesign holds a problematic monopoly on paper books production and is hardly escapable when wanting to create tools that address publishing as a whole. But since its converting tool isn’t very performing we thought creating this IDML to EPUB option would be an inviting gesture and a first step towards open source design solutions for graphic designers who use it. 
+
+###Some of the components of the hybrid publishing converter:
+
+* an IDML file with linked assets, images, fonts
+
+* a mapping file
+
+* an overriding css stylesheet
+
+* some configuration files
+
 
 ###Preparation of the input file
 
