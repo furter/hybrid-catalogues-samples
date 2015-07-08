@@ -14,12 +14,6 @@ The following is a guide to use the magic pipeline that converts publishing form
 
 * some configuration files
 
-Configuration file:
-Defines things at the level of the structure, like
-– what elements are taken in the table of contents 
-
-Error report:
-Points the errors in the files (IDML + conf?)
 
 ###Installation of transpect and terminal commands
 
@@ -35,9 +29,7 @@ See here: https://github.com/consortium/BinB/blob/master/transpect/README.md
 
 ##LE-TEX CONVERTER THROUGH THE TERMINAL
 
-Run the following command in the terminal:
-
-Linux:
+Terminal command in Linux:
 
     calabash/calabash.sh -o html=out.html -o raw-html=raw.html -o hub=/dev/null adaptions/common/xpl/idml2epub.xpl debug=yes debug-dir-uri=file:$(readlink -m debug) input=../content/sample/idml/sample.idml
 
@@ -45,7 +37,7 @@ MacOS:
 
     calabash/calabash.sh -o html=out.html -o raw-html=raw.html -o hub=/dev/null adaptions/common/xpl/idml2epub.xpl debug=yes debug-dir-uri=debug input=../content/sample/idml/sample.idml
 
-
+See also the [installation manual](https://github.com/consortium/BinB/blob/master/transpect/README.md).
 
 ##ONLINE CONVERTER
 
