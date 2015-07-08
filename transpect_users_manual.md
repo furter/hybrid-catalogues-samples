@@ -10,8 +10,10 @@ The production of a publications layout is informed by the tools used and the cu
 
 ###Installation of the hybrid publishing converter and terminal commands
 
-See here: https://github.com/consortium/BinB/blob/master/transpect/README.md
+Clone the converter [repository](https://github.com/consortium/publishing-converter/tree/master/transpect) in your computer, and follow the readme to [install it](https://github.com/consortium/publishing-converter/tree/master/transpect/README.md)
 
+Once you have installed it, create a folder on your computer in which you will put your publications files.
+Don’t forget to adapt the path of the command ``ìnput=`` to point at the right files.
 
 ###HTML ➝ EPUB
 
@@ -21,7 +23,7 @@ See here: https://github.com/consortium/BinB/blob/master/transpect/README.md
 
 ###Run the converter through the Terminal
 
-    calabash/calabash.sh -o raw-html=input.xhtml adaptions/common/xpl/html5_2epub.xpl input=input.html
+    calabash/calabash.sh -o raw-html=input.xhtml adaptions/common/xpl/html5_2epub.xpl input=***path***/***filename***.html
     
 See also the [installation manual](https://github.com/consortium/BinB/blob/master/transpect/README.md).
 
@@ -272,11 +274,11 @@ adapt it to html5
 
 Terminal command in Linux:
 
-    calabash/calabash.sh -o html=out.html -o raw-html=raw.html -o hub=/dev/null adaptions/common/xpl/idml2epub.xpl debug=yes debug-dir-uri=file:$(readlink -m debug) input=../content/sample/idml/sample.idml
+    calabash/calabash.sh -o html=out.html -o raw-html=raw.html -o hub=/dev/null adaptions/common/xpl/idml2epub.xpl debug=yes debug-dir-uri=file:$(readlink -m debug) input=***path***/***filename***.idml
 
 MacOS:
 
-    calabash/calabash.sh -o html=out.html -o raw-html=raw.html -o hub=/dev/null adaptions/common/xpl/idml2epub.xpl debug=yes debug-dir-uri=debug input=../content/sample/idml/sample.idml
+    calabash/calabash.sh -o html=out.html -o raw-html=raw.html -o hub=/dev/null adaptions/common/xpl/idml2epub.xpl debug=yes debug-dir-uri=debug input=***path***/***filename***.idml
 
 See also the [installation manual](https://github.com/consortium/BinB/blob/master/transpect/README.md).
 
