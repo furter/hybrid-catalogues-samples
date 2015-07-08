@@ -32,10 +32,10 @@ See also the [installation manual](https://github.com/consortium/BinB/blob/maste
 
 ###Notes on the “passages” between fixed layout to flowing layout
 
-After the pen, the lead structures of the printing press and the rulers of the phototypesetting, paper books layout has continued to be done and thought through visual systems. Since our “digital era”, with the spread of (personal) computers, paper books layout is done with digital tools and majoritarily via visual interface systems, like InDesign and Scribus.
+After the scribes’ pens, the lead structures of the printing press and the pica rulers of the phototypesetting, paper books layout has continued to be done in a tradition of visual layout tools. And it is still the case in our “digital era”. With the spread of (personal) computers paper books layout is now done with digital tools, and majoritarily via visual interface systems, like InDesign and Scribus.
 
-Simultaneously, digital layout systems for screen content — websites first and then digital books — were developed, using another way of doing and thinking about layout: a text-based approach where the structural and styling instructions are encoded, word by word, line by line.
-The visual interface systems propose a picturial geo-graphic approach of the layout: create and move graphical elements — frames, texts and images — on the spread’s canvas with the mouse. Templates and guides can be created to build constants and systematics throughout the pages. This visual approach to design is called What You See Is What You Get, WYSYWIG, where the interface mimics the expected end result (the printed page for instance).
+Simultaneously, digital layout systems for screen content — websites first and then digital books — were developed, using another way of doing (and thinking about) layout: a text-based approach where the structural and styling instructions are encoded, word by word, line by line.
+The visual interface systems propose a pictorial geo-graphic approach of the layout: create and move graphical elements — frames, texts and images — on the spread’s canvas, with the mouse as if it was a tool to cut, move and paste elements. This visual approach to design is called What You See Is What You Get, WYSYWIG, where the interface mimics the expected end result (the printed page for instance).
 
 [![Xerox Star 8010](http://www.digibarn.com/collections/screenshots/xerox-star-8010/xerox-star-8010-09.jpg)](http://i.liketightpants.net/and/hackers-culture-and-the-fear-of-wysiwyg)
 
@@ -249,6 +249,13 @@ image~90_right
 ###Horizontal lines?
 
 
+###Templates
+The word template has different meanings in the different design tools.
+In the fixed visual layout systems, even if the approach is very “hand-crafted”, templates and guides can be created to build constants and systematics throughout the pages. 
+In the flowing code-based layout systems, a template is a kind of empty structure, that gets filled with a content stored somewhere else, in a database.
+
+###template-style-content
+Distinction between the template (empty structure) the style (generic style inofrmation) and the content (stored somewhere else and imported automatically in the template).
 
 
 INDD books
