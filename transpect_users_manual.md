@@ -29,7 +29,8 @@ See also the [installation manual](https://github.com/consortium/BinB/blob/maste
 
 ###IDML ➝ EPUB
 
-###Notes on the “passage” from fixed layout to flowing layout
+
+###Notes on the “passages” between fixed layout to flowing layout
 
 After the pen, the lead structures of the printing press and the rulers of the phototypesetting, paper books layout has continued to be done and thought through visual systems. Since our “digital era”, with the spread of (personal) computers, paper books layout is done with digital tools and majoritarily via visual interface systems, like InDesign and Scribus.
 
@@ -42,11 +43,11 @@ Screen-content layout systems on the other hand propose a textual approach to de
 
 The term “desktop publishing” is still used to refer to the visual layout systems like InDesign and Scribus, but since today everything is done on desktop (or laptop) computers, it has become urgent to use (or create) more precise terms to qualify the different layout systems.
 
+![fixed and flowing layout systems](https://raw.githubusercontent.com/furter/hybrid-catalogues-samples/master/images/readme-layout-tools.png)
+
 The traditional visual design systems are based on a fixed, defined vision of the page, coming from the printed object realities: once it is printed and cut, the format doesn’t change much. In these systems, each unique page or spread is a canvas, a surface where the elements are displayed. In the digital formats realm (websites, ebooks) the page is much more flexible, its limits are defined by the window or application frame, and also by the device’s size. From a device to another the surface will change format, and the design as well.
 
 With this rather flexible notion of page, the design for screen-contents has been thought in very different terms than what the visual layout systems were proposing: the different elements are by default in a flow, piled down one after the others, a bit like letters in a text. That is one of the main and fundamental differences between “fixed layout” and “flowing layout”.
-
-![html-flowing layout](https://research.consortium.io/docs/documentation/assets/img/tools-edit-html.png) ![visual fixed layout](https://research.consortium.io/docs/documentation/assets/img/tools-page-by-page-layout.png)
 
 The proprietary software InDesign holds a problematic monopoly on paper books production and is hardly escapable when wanting to create tools that address publishing as a whole. But since its converting tool isn’t very performing we thought creating this IDML to EPUB option would be an inviting gesture and a first step towards open source design solutions for graphic designers who use it. 
 
