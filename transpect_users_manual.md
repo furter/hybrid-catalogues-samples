@@ -4,7 +4,7 @@
 
 The following is a guide to use the magic pipeline that converts publishing formats into others.
 
-###The different components of the magic pipeline:
+###Some of the components of the magic pipeline:
 
 * an IDML file with linked assets, images, fonts
 
@@ -22,16 +22,58 @@ See here: https://github.com/consortium/BinB/blob/master/transpect/README.md
 
 ##HTML ➝ EPUB
 
-    calabash/calabash.sh -o raw-html=input.xhtml adaptions/common/xpl/html5_2epub.xpl input=input.html
+###Preparation of the input file
 
+…
+
+###Run the converter through the Terminal
+
+    calabash/calabash.sh -o raw-html=input.xhtml adaptions/common/xpl/html5_2epub.xpl input=input.html
+    
+See also the [installation manual](https://github.com/consortium/BinB/blob/master/transpect/README.md).
 
 ##IDML ➝ EPUB
 
-###IDML preparation: two situations:
+###Notes on the “passage”
+
+The production of a publication’s layout is informed by the tools used and the culture embedded in these tools. There isn’t one “way” of doing layout but traditions, conventions and a series of tools, more or less accessible, more or less taught and used.
+
+After the pen, the lead structures of the printing press and the rulers of the phototypesetting, paper books layout has continued to be done and thought through visual systems. Since our “digital era”, with the spread of (personal) computers, paper books layout is done with digital tools and majoritarily via visual interface systems, like InDesign and Scribus.
+
+Simultaneously, digital layout systems for screen content — websites first and then digital books — were developed, using another way of doing and thinking about layout: a text-based approach where the structural and styling instructions are encoded, word by word, line by line.
+The visual interface systems propose a picturial geo-graphic approach of the layout: create and move graphical elements — frames, texts and images — on the spread’s canvas with the mouse. Templates and guides can be created to build constants and systematics throughout the pages. This visual approach to design is called What You See Is What You Get, WYSYWIG, where the interface mimics the expected end result (the printed page for instance).
+
+[![Xerox Star 8010](http://www.digibarn.com/collections/screenshots/xerox-star-8010/xerox-star-8010-09.jpg)](http://i.liketightpants.net/and/hackers-culture-and-the-fear-of-wysiwyg)
+
+Screen-content layout systems on the other hand propose a textual approach to design, closer to the way it is encoded than the visual interface software (even visual systems are encoded in text = code), in a What You See Is What You Mean, WYSIWYM, as instructions.
+
+The term “desktop publishing” is still used to refer to the visual layout systems like InDesign and Scribus, but since today everything is done on desktop (or laptop) computers, it has become urgent to use (or create) more precise terms to qualify the different layout systems.
+
+The traditional visual design systems are based on a fixed, defined vision of the page, coming from the printed object realities: once it is printed and cut, the format doesn’t change much. In these systems, each unique page or spread is a canvas, a surface where the elements are displayed. In the digital formats realm (websites, ebooks) the page is much more flexible, its limits are defined by the window or application frame, and also by the device’s size. From a device to another the surface will change format, and the design as well.
+
+With this rather flexible notion of page, the design for screen-contents has been thought in very different terms than what the visual layout systems were proposing: the different elements are by default in a flow, piled down one after the others, a bit like letters in a text. That is one of the main and fundamental differences between “fixed layout” and “flowing layout”.
+
+[IMAGE DIAGRAM]
+
+The proprietary software InDesign holds a problematic monopoly on paper books production and is hardly escapable when wanting to create tools that address publishing as a whole. But since its converting tool isn’t very performing we thought creating this IDML to EPUB option would be an inviting gesture and a first step towards open source design solutions for graphic designers who use it. 
+
+###Preparation of the input file
+
+The preparation of the InDesign file depends of the situation: is it an existing document that needs to be converted or is it a document that doesn’t exist yet and needs to be created?
 
 ###CONVERT AN EXISTING DOCUMENT
 
-…
+Converting old InDesign publications in an open source structured format like HTML allows them to last longer in an accessible and flexible format: they can be re-used, re-published under new formats and re-distributed much more easily.
+
+####Style mapping
+
+Re-styling the old InDesign document would take ages and isn’t the point here. What we want to do is give enough information to the converter so that it can save as much information as possible.
+
+####Page anchoring script
+
+Download the page anchoring script here: https://github.com/le-tex/InDesignScripts/blob/master/pagenames/PageNamesToStoryALL.jsx
+import it in InDesign and run it in the INDD document.
+It will add information as conditional text on every element so that the converter knows how to order them in the ePub.
 
 ###START A NEW INDESIGN DOCUMENT
 
@@ -224,7 +266,7 @@ anywhere on the drive: specify the path to the html file
 adapt it to html5
 
 
-###LE-TEX CONVERTER THROUGH THE TERMINAL
+###Run the converter through the Terminal
 
 Terminal command in Linux:
 
