@@ -35,11 +35,11 @@ See also the [installation manual](https://github.com/consortium/BinB/blob/maste
 After the scribes’ pens, the lead structures of the printing press and the pica rulers of the phototypesetting, paper books layout has continued to be done in a tradition of visual layout tools. And it is still the case in our “digital era”. With the spread of (personal) computers paper books layout is now done with digital tools, and majoritarily via visual interface systems, like InDesign and Scribus.
 
 Simultaneously, digital layout systems for screen content — websites first and then digital books — were developed, using another way of doing (and thinking about) layout: a text-based approach where the structural and styling instructions are encoded, word by word, line by line.
-The visual interface systems propose a pictorial geo-graphic approach of the layout: create and move graphical elements — frames, texts and images — on the spread’s canvas, with the mouse as if it was a tool to cut, move and paste elements. This visual approach to design is called What You See Is What You Get, WYSYWIG, where the interface mimics the expected end result (the printed page for instance).
+The visual interface systems propose a pictorial geo-graphic approach of the layout: create and move graphical elements (frames, texts and images) on the spread’s canvas. There the designer uses the mouse as if it was a tool to cut, move and paste elements. This visual approach to design is called What You See Is What You Get, WYSYWIG, where the interface mimics the expected end result (the printed page for instance).
 
 [![Xerox Star 8010](http://www.digibarn.com/collections/screenshots/xerox-star-8010/xerox-star-8010-09.jpg)](http://i.liketightpants.net/and/hackers-culture-and-the-fear-of-wysiwyg)
 
-Screen-content layout systems on the other hand propose a textual approach to design, closer to the way it is encoded than the visual interface software (even visual systems are encoded in text = code), in a What You See Is What You Mean, WYSIWYM, as instructions.
+Screen-content layout systems on the other hand propose a textual approach to design, closer to the way it is encoded than the what the visual interface software propose (even visual systems are encoded in text = code). We talk about What You See Is What You Mean, WYSIWYM, a way of designing through instructions, written with the keyboard. 
 
 The term “desktop publishing” is still used to refer to the visual layout systems like InDesign and Scribus, but since today everything is done on desktop (or laptop) computers, it has become urgent to use (or create) more precise terms to qualify the different layout systems.
 
