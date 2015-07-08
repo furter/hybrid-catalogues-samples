@@ -1,6 +1,6 @@
 
 #THROUGH THE PIPELINE
-##A manual for designers and editors
+###A manual for designers and editors
 
 The following is a guide to use the magic pipeline that converts publishing formats into others.
 
@@ -20,97 +20,20 @@ The following is a guide to use the magic pipeline that converts publishing form
 See here: https://github.com/consortium/BinB/blob/master/transpect/README.md
 
 
-#HTML ➝ EPUB
+##HTML ➝ EPUB
 
     calabash/calabash.sh -o raw-html=input.xhtml adaptions/common/xpl/html5_2epub.xpl input=input.html
 
 
-#IDML ➝ EPUB
+##IDML ➝ EPUB
 
-##LE-TEX CONVERTER THROUGH THE TERMINAL
+###IDML preparation: two situations:
 
-Terminal command in Linux:
+###CONVERT AN EXISTING DOCUMENT
 
-    calabash/calabash.sh -o html=out.html -o raw-html=raw.html -o hub=/dev/null adaptions/common/xpl/idml2epub.xpl debug=yes debug-dir-uri=file:$(readlink -m debug) input=../content/sample/idml/sample.idml
-
-MacOS:
-
-    calabash/calabash.sh -o html=out.html -o raw-html=raw.html -o hub=/dev/null adaptions/common/xpl/idml2epub.xpl debug=yes debug-dir-uri=debug input=../content/sample/idml/sample.idml
-
-See also the [installation manual](https://github.com/consortium/BinB/blob/master/transpect/README.md).
-
-##ONLINE CONVERTER
-
-Url of the converter:
-http://transpect.le-tex.de/en/converter/save_file?set_button=&upload_type=BinB
-(currently there is no access control)
-
-TO USE THE CONVERTER
-
-NEW FILE
-
-1. upload a zip file, which contains:
-– a folder called images, which contains the images
-– the style mapping map-idml.xhtml in a folder called styles
-(styles/map-idml.xhtml)
-– etc. /fonts
-
-2. upload the corresponding IDML file (same base name as the zip file)
-Example: Manifest_Extract.idml, Manifest_Extract.zip
-
-3. click on the red button!
-Download filelist.html and enjoy your ePub
-
-
-TO UPDATE ALREADY UPLOADED FILES
-
-1. don’t upload all the zip file, but a new zip with only the updated files 
-(keep the same structure: i.e., images/…)
-
-2. click on the red button!
-Download filelist.html and enjoy your ePub
-
-
-MORE OPTIONS, MORE CONTROL:
-
-FILE FORMATS:
-.jpg
-.tiff > .jpg
-.png
-
-.EPS files don’t work
-
-
-IMAGES
-All image paths, no matter where they were before, will be replaced with
-that path. And currently the file extension will be changed to .jpg, at
-least for tiff. You can export the images using one of the scripts here:
-https://github.com/le-tex/InDesignScripts/tree/master/image-export
-
-INDESIGN GUIDELINES
 …
 
-CUSTOM STYLESHEET
-Modify the classes in the file map-idml.xhtml
-/transpect/adaptions/common/css/overriding.css
-
-
-REMOVE ELEMENTS FROM THE EPUB
-- Give the elements a specific class in INDD (epub-no)
-[is it possible to attribute several classes to one element?]
-
-
-
-
-
-
-##Two situations:
-
-##CONVERT AN EXISTING DOCUMENT
-
-
-
-##START A NEW INDESIGN DOCUMENT
+###START A NEW INDESIGN DOCUMENT
 
 ###FORMAT & PROPORTIONS
 The main difference between a classical page-to-page print layout and hybrid-digital layout is that, in the first case, the final page format is fixed, while in the second case the page format is variable and depends of the size and settings of the device of each user.
@@ -158,7 +81,7 @@ If we use INDD epub export and have many parallel un-anchored item > exported ob
 Anchoring is necessary to restore the linear reading order, attach figures and marginal notes to a main text.
 Limitations: if there is no main text on a spread (no anchoring possibilities on a page)
 or anchor linked text frames spread across two pages to another text — anchoring only works for one text frame, not for linked text frames (?)
-> use of StoryID & StoryRef
+use of StoryID & StoryRef
 FigureRef (write the name of the image with FigureRef)
 
 ###IMAGES
@@ -299,6 +222,80 @@ command:
  * where should we put the html file and assets (img, fonts, etc)?
 anywhere on the drive: specify the path to the html file
 adapt it to html5
+
+
+###LE-TEX CONVERTER THROUGH THE TERMINAL
+
+Terminal command in Linux:
+
+    calabash/calabash.sh -o html=out.html -o raw-html=raw.html -o hub=/dev/null adaptions/common/xpl/idml2epub.xpl debug=yes debug-dir-uri=file:$(readlink -m debug) input=../content/sample/idml/sample.idml
+
+MacOS:
+
+    calabash/calabash.sh -o html=out.html -o raw-html=raw.html -o hub=/dev/null adaptions/common/xpl/idml2epub.xpl debug=yes debug-dir-uri=debug input=../content/sample/idml/sample.idml
+
+See also the [installation manual](https://github.com/consortium/BinB/blob/master/transpect/README.md).
+
+###ONLINE CONVERTER
+
+Url of the converter:
+http://transpect.le-tex.de/en/converter/save_file?set_button=&upload_type=BinB
+(currently there is no access control)
+
+TO USE THE CONVERTER
+
+NEW FILE
+
+1. upload a zip file, which contains:
+– a folder called images, which contains the images
+– the style mapping map-idml.xhtml in a folder called styles
+(styles/map-idml.xhtml)
+– etc. /fonts
+
+2. upload the corresponding IDML file (same base name as the zip file)
+Example: Manifest_Extract.idml, Manifest_Extract.zip
+
+3. click on the red button!
+Download filelist.html and enjoy your ePub
+
+
+TO UPDATE ALREADY UPLOADED FILES
+
+1. don’t upload all the zip file, but a new zip with only the updated files 
+(keep the same structure: i.e., images/…)
+
+2. click on the red button!
+Download filelist.html and enjoy your ePub
+
+
+MORE OPTIONS, MORE CONTROL:
+
+FILE FORMATS:
+.jpg
+.tiff > .jpg
+.png
+
+.EPS files don’t work
+
+
+IMAGES
+All image paths, no matter where they were before, will be replaced with
+that path. And currently the file extension will be changed to .jpg, at
+least for tiff. You can export the images using one of the scripts here:
+https://github.com/le-tex/InDesignScripts/tree/master/image-export
+
+INDESIGN GUIDELINES
+…
+
+CUSTOM STYLESHEET
+Modify the classes in the file map-idml.xhtml
+/transpect/adaptions/common/css/overriding.css
+
+
+REMOVE ELEMENTS FROM THE EPUB
+- Give the elements a specific class in INDD (epub-no)
+[is it possible to attribute several classes to one element?]
+
 
 
 
