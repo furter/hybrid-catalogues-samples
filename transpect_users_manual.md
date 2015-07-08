@@ -2,13 +2,17 @@
 #THROUGH THE PIPELINE
 ##A manual for designers and editors
 
+The following is a guide to use the magic pipeline that converts publishing formats into others.
+
 ###The different components of the magic pipeline:
 
-*an IDML file
-with linked assets, images, fonts
-*a mapping file
-*an overriding css stylesheet
-*some configuration files
+* an IDML file with linked assets, images, fonts
+
+* a mapping file
+
+* an overriding css stylesheet
+
+* some configuration files
 
 Configuration file:
 Defines things at the level of the structure, like
@@ -21,19 +25,94 @@ Points the errors in the files (IDML + conf?)
 
 See here: https://github.com/consortium/BinB/blob/master/transpect/README.md
 
+
+#HTML ➝ EPUB
+
+    calabash/calabash.sh -o raw-html=input.xhtml adaptions/common/xpl/html5_2epub.xpl input=input.html
+
+
+#IDML ➝ EPUB
+
+##LE-TEX CONVERTER THROUGH THE TERMINAL
+
+Run the following command in the terminal:
+
+Linux:
+
+    calabash/calabash.sh -o html=out.html -o raw-html=raw.html -o hub=/dev/null adaptions/common/xpl/idml2epub.xpl debug=yes debug-dir-uri=file:$(readlink -m debug) input=../content/sample/idml/sample.idml
+
+MacOS:
+
     calabash/calabash.sh -o html=out.html -o raw-html=raw.html -o hub=/dev/null adaptions/common/xpl/idml2epub.xpl debug=yes debug-dir-uri=debug input=../content/sample/idml/sample.idml
 
 
 
+##ONLINE CONVERTER
 
-#From HTML to ePub
+Url of the converter:
+http://transpect.le-tex.de/en/converter/save_file?set_button=&upload_type=BinB
+(currently there is no access control)
+
+TO USE THE CONVERTER
+
+NEW FILE
+
+1. upload a zip file, which contains:
+– a folder called images, which contains the images
+– the style mapping map-idml.xhtml in a folder called styles
+(styles/map-idml.xhtml)
+– etc. /fonts
+
+2. upload the corresponding IDML file (same base name as the zip file)
+Example: Manifest_Extract.idml, Manifest_Extract.zip
+
+3. click on the red button!
+Download filelist.html and enjoy your ePub
+
+
+TO UPDATE ALREADY UPLOADED FILES
+
+1. don’t upload all the zip file, but a new zip with only the updated files 
+(keep the same structure: i.e., images/…)
+
+2. click on the red button!
+Download filelist.html and enjoy your ePub
+
+
+MORE OPTIONS, MORE CONTROL:
+
+FILE FORMATS:
+.jpg
+.tiff > .jpg
+.png
+
+.EPS files don’t work
+
+
+IMAGES
+All image paths, no matter where they were before, will be replaced with
+that path. And currently the file extension will be changed to .jpg, at
+least for tiff. You can export the images using one of the scripts here:
+https://github.com/le-tex/InDesignScripts/tree/master/image-export
+
+INDESIGN GUIDELINES
+…
+
+CUSTOM STYLESHEET
+Modify the classes in the file map-idml.xhtml
+/transpect/adaptions/common/css/overriding.css
+
+
+REMOVE ELEMENTS FROM THE EPUB
+- Give the elements a specific class in INDD (epub-no)
+[is it possible to attribute several classes to one element?]
 
 
 
 
-#From IDML to ePub
 
-Two situations
+
+##Two situations:
 
 ##CONVERT AN EXISTING DOCUMENT
 
@@ -228,31 +307,6 @@ command:
  * where should we put the html file and assets (img, fonts, etc)?
 anywhere on the drive: specify the path to the html file
 adapt it to html5
-
-User manuals:
- * guidelines-graphic-designers.epub (not complete: working on that)
- * are there other ones? like a standard style name dictionnary (mapping) for example?
-
-
-TO DO URGENT:
-* implement cover integration
-* implement metadata integration + title
-* implement TOC
-* implement style mapping (page breaks, etc)
-* implement fonts integration
-
-BUGS:
-* max font size (otherwise the words are not displayed entirerly)
-* InDesign footnotes’ conversion seems to bug… (see Meson Press example: the numbers are not displayed, no links)
-* the conditional text EOnly doesn’t work, it is visible in pdf exports.
-* conversion images tiff > jpg doesn’t always work, pdf > jpg neither, and eps don’t get converted. In the manual I’m highlighting the fact that anyway it is better to do it by hand for more control.
-
-
-QUESTIONS:
-cropped images? (with frame adjustment)
-object styles?
-how can we imagine a good stystem for hand made notes? ids?
-
 
 
 
