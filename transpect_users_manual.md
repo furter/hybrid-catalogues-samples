@@ -6,14 +6,14 @@ The hybrid publishing converter is a tool that converts publications formats int
 
 In short, “hybrid publishing” refers to contemporary practices of producing different publications formats (paper books, ebooks, web contents…) in a connected and complementary way.
 
-The production of a publications layout is informed by the tools used and the culture embedded in these tools. There isn’t one “way” of doing layout but traditions, conventions and a series of tools, more or less accessible, more or less taught and used.
+The production of a publications layout is informed by the tools used and the culture embedded in these tools. There isn’t one “way” of doing layout but traditions, conventions and a series of tools, more or less accessible, more or less taught and used. The approach here isn’t to build one tool solving all the issues that come with a hybrid publishing workflow but to try and find clever connections between different tools — open source ones as much as we can, to make it available to smaller publishers, graphic designers and institutions.
 
 ###Installation of the hybrid publishing converter and terminal commands
 
 See here: https://github.com/consortium/BinB/blob/master/transpect/README.md
 
 
-##HTML ➝ EPUB
+###HTML ➝ EPUB
 
 ###Preparation of the input file
 
@@ -25,7 +25,7 @@ See here: https://github.com/consortium/BinB/blob/master/transpect/README.md
     
 See also the [installation manual](https://github.com/consortium/BinB/blob/master/transpect/README.md).
 
-##IDML ➝ EPUB
+###IDML ➝ EPUB
 
 ###Notes on the “passage” from fixed layout to flowing layout
 
