@@ -6,6 +6,7 @@ The hybrid publishing converter is a tool that converts publications formats int
 
 In short, “hybrid publishing” refers to contemporary practices of producing different publications formats (paper books, ebooks, web contents…) in a connected and complementary way.
 
+The production of a publications layout is informed by the tools used and the culture embedded in these tools. There isn’t one “way” of doing layout but traditions, conventions and a series of tools, more or less accessible, more or less taught and used.
 
 ###Installation of the hybrid publishing converter and terminal commands
 
@@ -26,9 +27,7 @@ See also the [installation manual](https://github.com/consortium/BinB/blob/maste
 
 ##IDML ➝ EPUB
 
-###Notes on the “passage”
-
-The production of a publication’s layout is informed by the tools used and the culture embedded in these tools. There isn’t one “way” of doing layout but traditions, conventions and a series of tools, more or less accessible, more or less taught and used.
+###Notes on the “passage” from fixed layout to flowing layout
 
 After the pen, the lead structures of the printing press and the rulers of the phototypesetting, paper books layout has continued to be done and thought through visual systems. Since our “digital era”, with the spread of (personal) computers, paper books layout is done with digital tools and majoritarily via visual interface systems, like InDesign and Scribus.
 
