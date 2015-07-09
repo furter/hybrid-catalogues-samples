@@ -2,11 +2,11 @@
 #THROUGH THE PUBLISHING CONVERTER
 ###The hybrid publishing converter manual for designers and editors
 
-The hybrid publishing converter is a tool that converts publications formats into others in a durable, high-quality, design caring hybrid publishing way.
+The hybrid publishing converter is a tool that converts publications formats into others, in a durable, high-quality, design caring, hybrid publishing way.
 
 In short, “hybrid publishing” refers to contemporary practices of producing different publications formats (paper books, ebooks, web contents…) in a connected and complementary way.
 
-The production of a publications layout is informed by the tools used and the culture embedded in these tools. There isn’t one “way” of doing layout but traditions, conventions and a series of tools, more or less accessible, more or less taught and used. The approach here isn’t to build one tool solving all the issues that come with a hybrid publishing workflow but to try and find clever connections between different tools — open source ones as much as we can, to make it available to smaller publishers, graphic designers and institutions.
+The production of a publications layout is informed by the tools used and the culture embedded in these tools. There isn’t one “way” of doing layout but rather traditions, conventions and a series of tools, more or less accessible, more or less taught and used. The approach here isn’t to build one tool that solves all the issues that come with a hybrid publishing workflow but to try and find clever connections between different tools — open source ones as much as we can — to make it available to smaller publishers, graphic designers and institutions.
 
 ###Installation of the hybrid publishing converter and terminal commands
 
@@ -77,6 +77,7 @@ Converting old InDesign publications in an open source structured format like HT
 ####Style mapping
 
 Re-styling the old InDesign document would take ages and isn’t the point here. What we want to do is give enough information to the converter so that it can save as much information as possible.
+The styles can then be mapped in an html table in order to improve the translation into html structure and css styling.
 
 ####Page anchoring script
 
