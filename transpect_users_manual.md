@@ -53,7 +53,7 @@ With this rather flexible notion of page, the design for screen-contents has bee
 
 ![fixed and flowing layout systems](https://raw.githubusercontent.com/furter/hybrid-catalogues-samples/master/images/pager-digital-pages.png)
 
-The proprietary software InDesign holds a problematic monopoly on paper books production and is hardly escapable when wanting to create tools that address publishing as a whole. But since its converting tool isn’t very performing, proposing this IDML to EPUB option as part of the converter will be an inviting gesture and a first step towards open source design solutions for graphic designers. 
+This part of the manual concerns the conversion from InDesign IDML documents to EPUB documents. The proprietary software InDesign holds a problematic monopoly on paper books production and it is hardly escapable when wanting to create tools that address publishing as a whole. But since the conversion to EPUB is not its speciality, proposing this IDML to EPUB open source converter will hopefully be an inviting gesture and a first step towards open source design solutions for graphic designers. 
 
 ###Some of the components of the hybrid publishing converter:
 
