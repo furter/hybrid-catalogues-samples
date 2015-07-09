@@ -39,7 +39,7 @@ The visual interface systems propose a pictorial geo-graphic approach of the lay
 
 [![Xerox Star 8010](http://raw.githubusercontent.com/furter/hybrid-catalogues-samples/master/images/xerox-star-8010-09.jpg)](http://i.liketightpants.net/and/hackers-culture-and-the-fear-of-wysiwyg)
 
-Screen-content layout systems on the other hand propose a textual approach to design, closer to the way it is encoded than the what the visual interface software propose (even visual systems are encoded in text = code). We talk about What You See Is What You Mean, WYSIWYM, a way of designing through instructions, written with the keyboard. 
+Screen-content layout systems on the other hand propose a textual approach to design, closer to the way it is encoded than the what the visual interface software propose (even visual systems are encoded in text = code). We talk about What You See Is What You Mean, WYSIWYM, a way of designing through instructions, through the keyboard. 
 
 ![GitHub WYSIWYG interface](http://raw.githubusercontent.com/furter/hybrid-catalogues-samples/master/images/WYSIWYM.png)
 
